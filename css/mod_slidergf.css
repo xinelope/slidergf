@@ -1,0 +1,309 @@
+#myCSSGbox {
+  background-color: black; width: 100%; overflow: hidden;  margin: 0 auto; height: 100vh;
+}
+#myCSSGbilder { margin: 0px auto;  }
+#myCSSGbox #slide_1 ~ #myCSSGbilder, #myCSSGbox #slide_1 ~ #myCSSGbilder, #myCSSGbox #slide_2 ~ #myCSSGbilder  {
+  position: relative;
+        }
+    #myCSSGbox #myCSSGbilder figure {
+        position: absolute; width: 100%; height: auto; margin: 0
+    }
+    #myCSSGbilder figure img {	width: 100%; height: inherit; z-index: 1; display:block; }
+    #myCSSGbox #myCSSGbilder figcaption, #myCSSGbox #myCSSGbilder p {
+      z-index: 25;
+    }
+    #myCSSGbox figure > figcaption {
+      position: absolute;
+      margin: 8% 2% 12.5%; }
+    #myCSSGbox:target figure#fignbr_1  { display: none }
+    #myCSSGbox #myCSSGbilder a { color: #fff; text-decoration: none }
+    #myCSSGbox #myCSSGbilder a:hover, #myCSSGbox #myCSSGbilder a:active { text-decoration: underline; }
+    /**/
+#myCSSGbox #myCSSnavi {
+  width: inherit; position: relative; height: inherit; }
+#myCSSGbox #myCSSnavi #pause, #myCSSGbox #myCSSnavi #vor {
+  position: absolute; cursor: pointer; color: #fff; right: 0;
+  width: 100%; z-index: 1
+}
+/**/
+#myCSSGbox #vor::after, #myCSSGbox #pause::after {
+	content: ''; position: absolute; top: 41%; left: 45%; height: 80px; width: 80px; opacity: 0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  }
+#myCSSGbox #pause { display: none; }
+#myCSSGbox #vor:hover::after, #myCSSGbox #vor:active::after,
+#myCSSGbox #pause:hover::after, #myCSSGbox #pause:active::after {
+  border: 1px solid #fff;
+  -moz-box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+  transition: opacity 2s; opacity: 1;
+}
+#myCSSGbox #vor:hover::after, #myCSSGbox #vor:active::after {  background: url("arrow.svg") no-repeat center center rgba(0, 0, 0, 0.2) }
+#myCSSGbox #pause:hover::after, #myCSSGbox #pause:active::after {  background: url("pause.svg") no-repeat center center rgba(0, 0, 0, 0.2) }
+/**/
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_0 { opacity: 1 }
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_1 { opacity: 0 }
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_2 { opacity: 0 }
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_3 { opacity: 0 }
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_4 { opacity: 0 }
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_5 { opacity: 0 }
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_6 { opacity: 0 }
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_7 { opacity: 0 }
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_8 { opacity: 0 }
+#myCSSGbox #slide_0 ~ #myCSSGbilder figure#fignbr_9 { opacity: 0 }
+#myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_1,
+#myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_2,
+#myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_3,
+#myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_4,
+#myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_5,
+#myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_6,
+#myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_7,
+#myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_8,
+#myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_9,
+{ z-index: 1;  transition: opacity 4s; opacity: 0;
+  }
+#myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_2,
+ #myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_9
+   { z-index: 1; transition: opacity 4s; opacity: 0; }
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_1,
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_9
+  { z-index: 1; transition: opacity 4s; opacity: 0; }
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_1,
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_9
+  { z-index: 1; transition: opacity 4s; opacity: 0; }
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_1,
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_9
+  { z-index: 1; transition: opacity 4s; opacity: 0; }
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_1,
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_9
+  { z-index: 1; transition: opacity 4s; opacity: 0; }
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_1,
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_9
+  { z-index: 1; transition: opacity 4s; opacity: 0; }
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_1,
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_9
+  { z-index: 1; transition: opacity 4s; opacity: 0; }
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_1,
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_9
+  { z-index: 1; transition: opacity 4s; opacity: 0; }
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_1,
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_9
+  { z-index: 1; transition: opacity 4s; opacity: 0; }
+ #myCSSGbox #slide_0:checked ~ #myCSSGbilder figure#fignbr_0,
+ #myCSSGbox #slide_1:checked ~ #myCSSGbilder figure#fignbr_1,
+ #myCSSGbox #slide_2:checked ~ #myCSSGbilder figure#fignbr_2,
+ #myCSSGbox #slide_3:checked ~ #myCSSGbilder figure#fignbr_3,
+ #myCSSGbox #slide_4:checked ~ #myCSSGbilder figure#fignbr_4,
+ #myCSSGbox #slide_5:checked ~ #myCSSGbilder figure#fignbr_5,
+ #myCSSGbox #slide_6:checked ~ #myCSSGbilder figure#fignbr_6,
+ #myCSSGbox #slide_7:checked ~ #myCSSGbilder figure#fignbr_7,
+ #myCSSGbox #slide_8:checked ~ #myCSSGbilder figure#fignbr_8,
+ #myCSSGbox #slide_9:checked ~ #myCSSGbilder figure#fignbr_9
+ {  z-index: 1;  transition: opacity 2s; opacity: 1; }
+ /**/
+ #myCSSnavi #bulls {
+	position: absolute;	bottom: 0; z-index: 15;	width: inherit;	height: 12%;
+	display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  align-items: center;
+}
+  #bulls:hover, #bulls:active {  background-color: rgba(0, 0, 0, 0.3) }
+ #bulls:hover label, #bulls:active label  { border: 2px solid #bbb }
+#bulls label {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #333;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 1%;
+	width: 5px; height: 5px; display: inline-block; cursor: pointer;
+}
+#slide_0:checked ~ #myCSSnavi #bulls label[for="slide_0"] { background-color: #fff }
+#slide_1:checked ~ #myCSSnavi #bulls label[for="slide_1"] { background-color: #fff }
+#slide_2:checked ~ #myCSSnavi #bulls label[for="slide_2"] { background-color: #fff }
+#slide_3:checked ~ #myCSSnavi #bulls label[for="slide_3"] { background-color: #fff }
+#slide_4:checked ~ #myCSSnavi #bulls label[for="slide_4"] { background-color: #fff }
+#slide_5:checked ~ #myCSSnavi #bulls label[for="slide_5"] { background-color: #fff }
+#slide_6:checked ~ #myCSSnavi #bulls label[for="slide_6"] { background-color: #fff }
+#slide_7:checked ~ #myCSSnavi #bulls label[for="slide_7"] { background-color: #fff }
+#slide_8:checked ~ #myCSSnavi #bulls label[for="slide_8"] { background-color: #fff }
+#slide_9:checked ~ #myCSSnavi #bulls label[for="slide_9"] { background-color: #fff }
+#bulls label:hover, #bulls label:active
+{ background-color: #fff }
+input[type="radio"] { display: none; }
+/**/
+#myCSSGbox figure {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  margin: 0;
+}
+#myCSSGbox figure > figcaption {
+  -webkit-order: -1;
+  order: -1;
+}
+#myCSSGbox figure > figcaption.slidertxtOR {
+  right: 0;
+  -webkits-align-self: center;
+  align-self: center;
+  text-align: center;
+  font-size: 1.4em;
+  -khtml-text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  padding: 0 2% 12.5%;
+}
+#myCSSGbox figure > figcaption.slidertxtUR {
+  -webkits-align-self: flex-end;
+  align-self: flex-end;
+  right: 0;
+  text-align: right;
+  font-size: 1.4em;
+  -khtml-text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  padding: 8% 2%;
+}
+#myCSSGbox figure > figcaption a { display: block; color: #fff; text-decoration: none; font-size: 1.3em; }
+/**/
+@media screen and (max-width: 1050px) {
+  #myCSSGbox figure > figcaption.slidertxtOR { font-size: 1.2em; margin-top: 20%; }
+}
+@media screen and (max-width: 800px)
+{
+  #myCSSGbox, .moduletableslider { overflow: visible!important; position: relative!important; }
+  #myCSSGbox figure { display: block!important; }
+  #myCSSGbox figure > figcaption { font-size: 0.92em; }
+  #myCSSGbox figure > figcaption.slidertxtUR, #myCSSGbox figure > figcaption.slidertxtOR, #myCSSGbox figure > figcaption {
+    background-color:	#d67c19;
+    font-size: 0.9em;
+    margin: 0!important;
+    text-align: left!important;
+    padding: 11px 2%;
+    position: relative; min-width: 96vw; width: 96vw;
+  }
+  #myCSSGbox figure > figcaption.slidertxtUR a, #myCSSGbox figure > figcaption.slidertxtOR a, #myCSSGbox figure > figcaption a {
+    color: #fff!important; }
+}
+@media screen and (max-width: 450px)
+{
+  #myCSSGbox { background-color: #fff; }
+  #myCSSGbox, .moduletableslider { overflow: hidden; }
+  #myCSSGbox figure { display: block; margin: 0; height: auto; }
+
+  #myCSSGbox #myCSSGbilder a { color: #000; text-decoration: none; }
+  #myCSSGbox #myCSSnavi {
+	width: inherit;
+	position: relative;
+	height: inherit;
+  display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  }
+  #myCSSnavi #bulls {
+	position: relative;
+	width: inherit;
+	height: auto;
+	-webkit-align-self: flex-end;
+	align-self: flex-end;
+	-webkit-justify-self: flex-end;
+	padding: 1em 0;
+  }
+  #bulls:hover, #bulls:active { background-color: rgba(0, 0, 0, 0.7); }
+  #myCSSGbox #myCSSnavi #pause, #myCSSGbox #myCSSnavi #vor {
+	z-index: 1;
+  -webkit-align-self: center;
+  align-self: center;
+	-webkit-justify-self: center;
+	justify-self: center;
+	-webikit-order: -1;
+	order: -1;
+  position: relative;
+  }
+  #myCSSGbox #vor::after, #myCSSGbox #pause::after {
+      height: 50px;
+      width: 50px;
+  }
+}

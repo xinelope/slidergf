@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="install">
+	<name>slidergf</name>
+	<author>Gesine Frank</author>
+	<creationDate>February 2017</creationDate>
+	<copyright>Gesine Frank</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>master@mindenmix.de</authorEmail>
+	<authorURL>www.gesine-frank.de</authorURL>
+	<version>3.0.0</version>
+	<description>Slider für Joomla; weisen Sie dieses Modul einem benutzerdefinierten Modul mit Figure-Elementen zu.</description>
+	<files>
+		<filename module="mod_slidergf">mod_slidergf.php</filename><filename>index.html</filename><filename>mod_slidergf.xml</filename><filename>mod_slidergf.js</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+				</files>
+	<config>
+		<fields name="params">
+			</fields>
+	</config>
+	</extension>
